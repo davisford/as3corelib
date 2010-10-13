@@ -65,7 +65,7 @@
 	<target name="lib" depends="properties">
 		<exec executable="${compc.exe}" dir="${basedir}">
 			<!-- Specify the name of the output file -->
-			<arg line="-o '${bin.dir}/${library.name}.swc'" />
+			<arg line="-load-config ${flexhome}/frameworks/air-config.xml -o '${bin.dir}/${library.name}.swc'" />
 			
 			<!-- Specify the main source path as "src" -->
 			<arg line="-sp ${src.dir}" />
